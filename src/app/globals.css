@@ -1,0 +1,104 @@
+@import "tailwindcss";
+@source "../**/*.{ts,tsx}";
+@source "../../src/**/*.{ts,tsx}";
+
+:root {
+  --primary: #0f2b48;
+  --primary-light: #1a446c;
+  --accent: #0284c7;
+  --accent-emerald: #0d9488;
+  --accent-amber: #d97706;
+  --link-popup: #0284c7;
+  --link-popup-hover: #0369a1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1e293b;
+  background-color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Specific styling for internal & external links in body copy as requested:
+   "active links should be underline and have popup color on the body" */
+.body-link,
+article a:not(.btn),
+.seo-prose a:not(.btn) {
+  color: #0284c7;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 0 2px;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.body-link:hover,
+article a:not(.btn):hover,
+.seo-prose a:not(.btn):hover {
+  color: #0369a1;
+  background-color: #e0f2fe;
+  text-decoration-color: #0284c7;
+  transform: translateY(-1px);
+}
+
+.body-link:active,
+article a:not(.btn):active,
+.seo-prose a:not(.btn):active,
+.body-link.active {
+  color: #0c4a6e;
+  background-color: #bae6fd;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.2);
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Animations */
+@keyframes pulseSubtle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 0.9;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s infinite ease-in-out;
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
