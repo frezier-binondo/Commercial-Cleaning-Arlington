@@ -56,6 +56,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "nPw7qoPNrmxxFB376dMcIVfjA4CqCHTlDl-uv4jLvd8",
+  },
 };
 
 export default function RootLayout({
@@ -66,6 +69,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta
+          name="google-site-verification"
+          content="nPw7qoPNrmxxFB376dMcIVfjA4CqCHTlDl-uv4jLvd8"
+        />
         <LocalBusinessJsonLd />
       </head>
       <body className="min-h-screen flex flex-col bg-white text-slate-900 antialiased selection:bg-sky-200 selection:text-sky-900">
