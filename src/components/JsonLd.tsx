@@ -7,8 +7,8 @@ export const LocalBusinessJsonLd = () => {
     "@type": "LocalBusiness",
     name: siteConfig.name,
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
-    "@id": "https://www.commercialcleaningarlington.com",
-    url: "https://www.commercialcleaningarlington.com",
+    "@id": "https://www.commercialcleaningarlington.site",
+    url: "https://www.commercialcleaningarlington.site",
     telephone: siteConfig.phoneFormatted,
     priceRange: "$$",
     address: {

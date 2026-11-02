@@ -3,7 +3,7 @@ import { servicesData } from "@/data/servicesData";
 import { locationsData } from "@/data/locationsData";
 import { blogPosts } from "@/data/blogData";
 
-const BASE_URL = "https://www.commercialcleaningarlington.com";
+const BASE_URL = "https://www.commercialcleaningarlington.site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const currentDate = new Date();

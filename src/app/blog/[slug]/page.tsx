@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       description: post.excerpt,
       type: "article",
       publishedTime: post.publishedDate,
-      url: `https://www.commercialcleaningarlington.com/blog/${post.slug}`,
+      url: `https://www.commercialcleaningarlington.site/blog/${post.slug}`,
       images: [
         {
           url: post.featuredImage,
@@ -87,7 +87,7 @@ export default async function BlogPostDetailPage({ params }: BlogPostPageProps) 
       name: siteConfig.name,
       logo: {
         "@type": "ImageObject",
-        url: "https://www.commercialcleaningarlington.com/logo.png",
+        url: "https://www.commercialcleaningarlington.site/logo.png",
       },
     },
   };

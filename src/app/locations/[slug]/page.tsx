@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
     openGraph: {
       title: loc.metaTitle,
       description: loc.metaDescription,
-      url: `https://www.commercialcleaningarlington.com/locations/${loc.slug}`,
+      url: `https://www.commercialcleaningarlington.site/locations/${loc.slug}`,
       images: [
         {
           url: loc.heroImage,

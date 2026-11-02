@@ -25,14 +25,14 @@ export const metadata: Metadata = {
   authors: [{ name: "Commercial Cleaning Arlington" }],
   creator: "Commercial Cleaning Arlington",
   publisher: "Commercial Cleaning Arlington",
-  metadataBase: new URL("https://www.commercialcleaningarlington.com"),
+  metadataBase: new URL("https://www.commercialcleaningarlington.site"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Commercial Cleaning Arlington | Premier Janitorial Services in Arlington, VA",
     description: "Compare reliable commercial cleaning & janitorial quotes in Arlington, VA. Office cleaning, medical sanitation, floor care & day porters.",
-    url: "https://www.commercialcleaningarlington.com",
+    url: "https://www.commercialcleaningarlington.site",
     siteName: "Commercial Cleaning Arlington",
     locale: "en_US",
     type: "website",

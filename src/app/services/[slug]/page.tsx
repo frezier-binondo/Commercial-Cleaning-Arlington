@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     openGraph: {
       title: service.metaTitle,
       description: service.metaDescription,
-      url: `https://www.commercialcleaningarlington.com/services/${service.slug}`,
+      url: `https://www.commercialcleaningarlington.site/services/${service.slug}`,
       images: [
         {
           url: service.heroImage,
@@ -82,7 +82,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
       <ServiceJsonLd
         name={service.title}
         description={service.shortDescription}
-        url={`https://www.commercialcleaningarlington.com/services/${service.slug}`}
+        url={`https://www.commercialcleaningarlington.site/services/${service.slug}`}
         image={service.heroImage}
       />
 

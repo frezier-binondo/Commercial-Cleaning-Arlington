@@ -17,13 +17,13 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://www.commercialcleaningarlington.com",
+      item: "https://www.commercialcleaningarlington.site",
     },
     ...items.map((item, idx) => ({
       "@type": "ListItem",
       position: idx + 2,
       name: item.label,
-      item: item.href ? `https://www.commercialcleaningarlington.com${item.href}` : undefined,
+      item: item.href ? `https://www.commercialcleaningarlington.site${item.href}` : undefined,
     })),
   ];
 
